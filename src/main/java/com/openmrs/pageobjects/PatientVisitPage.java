@@ -58,6 +58,14 @@ public class PatientVisitPage {
 		}
 	};
 
+	/**
+	 * This POM method will be exposed in test case to upload a file in
+	 * the application
+	 * 
+	 * @param strFilePath
+	 * @param strCaptionNote
+	 * @return
+	 */
 	public void uploadFile(String strFilePath, String strCaptionNote) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(9));
 		this.clickAttachmentBtn();
