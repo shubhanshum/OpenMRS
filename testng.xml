@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EndToEndFlowSuite" verbose="1">
+
+	<test name="OpenMRSTest">
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="url"
+			value="https://demo.openmrs.org/openmrs/" />
+		<classes>
+			<class name="com.openmrs.tests.LoginTest" />
+			<class name="com.openmrs.tests.RegisterPatientTest" />
+			<class name="com.openmrs.tests.FindPatientTest" />
+			<class name="com.openmrs.tests.VerifyPatientDetailsTest" />
+			<class name="com.openmrs.tests.RequestAppointmentTest" />
+			<class name="com.openmrs.tests.UploadAttachmentTest" />
+			<class name="com.openmrs.tests.DeletePatientTest" />
+		</classes>
+	</test>
+</suite>

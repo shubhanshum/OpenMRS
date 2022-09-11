@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EndToEndFlowSuite]">
+  <test thread-count="5" name="OpenMRSTest(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="url" value="https://demo.openmrs.org/openmrs/"/>
+    <classes>
+      <class name="com.openmrs.tests.RequestAppointmentTest">
+        <methods>
+          <include name="requestAppointmentTest"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.openmrs.tests.RequestAppointmentTest -->
+    </classes>
+  </test> <!-- OpenMRSTest(failed) -->
+</suite> <!-- Failed suite [EndToEndFlowSuite] -->
