@@ -25,8 +25,7 @@ public class BrowserManager {
 			driver = new ChromeDriver(chromeOptions);
 		} else if (strBrowserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//Drivers//geckodriver");
-			FirefoxOptions options = new FirefoxOptions();
-			driver = new FirefoxDriver(options);
+			driver = new FirefoxDriver();
 		}else {
 			System.out.println("Browser not specified");
 		}
